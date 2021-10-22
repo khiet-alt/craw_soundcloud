@@ -1,7 +1,7 @@
 # We using 2 ways to crawl data from SoundCloud
 ### Get data using SoundCloud API
-> we have a list urls of 50 top tracks, it's a system-playlists which are automatically created by SoundCloud, not belonging to any user (we put it in **url_entry** folder)
-> In my code, I use **top50_url.txt** file to parse because it has less record and will be faster.
+> we have a list urls of 50 top tracks, it's a system-playlists which are automatically created by SoundCloud, not belonging to any user (we put it in **url_entry** folder)\
+> In my code, I use **top50_url.txt** file to parse because it has less record and will be faster.\
 > If you want to have more records, substituting **url_entrypoint** variable in head of code by **top50_url_max.txt**. And this will consume lots of time to processing, approximately 3 hours for entire code ( I remember have 1968 users row, 6632 playlists and more than 10.000 tracks)
 ###### Prerequisite
 Firstly, we send sequence *resolve request* to these top URL to get a lists of *track_id*.
