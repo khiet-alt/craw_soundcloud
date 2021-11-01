@@ -16,3 +16,5 @@ For playlists, we use */users/playlists* endpoint
 And using */users/tracks* endpoint for crawling tracks of users
 
 ### Get data using Parse HTML
+- We use selenium library so we download chromedriver.exe our version is 95.0.4638.69 
+- If you use another version please download at https://sites.google.com/a/chromium.org/chromedriver/downloads
