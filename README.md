@@ -1,8 +1,7 @@
-# We using 2 ways to crawl data from SoundCloud
+# Using 2 ways to crawl data from SoundCloud
+> We use concurrency to send multiple request in order to run program more faster but it will be lag when running parse_html as it must open multi-tab chrome
 ### Get data using SoundCloud API
 > we have a list urls of 50 top tracks, it's a system-playlists which are automatically created by SoundCloud, not belonging to any user (we put it in **url_entry** folder)\
-> In my code, I use **top50_url.txt** file to parse because it has less record and will be faster.\
-> If you want to have more records, substituting **url_entrypoint** variable in head of code by **top50_url_max.txt**. And this will consume lots of time to processing, approximately 3 hours for entire code ( I remember have 1968 users row, 6632 playlists and more than 10.000 tracks)
 ###### Prerequisite
 Firstly, we send sequence *resolve request* to these top URL to get a lists of *track_id*.
 Secondly, we will send request with *tracks* endpoint for each *track_id* to get detail infor of each track and it also contains *user* property, which has *id* of user belonging to that track and we will have a list of *user_id*
